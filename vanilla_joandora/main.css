@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  background: -webkit-linear-gradient(top, skyblue, white 50%);
+}
+
+/* media query */
+/* breakpoint: 1024px */
+/* width */
+/* font-size */
+
+/* main-box */
+@media (min-width: 1024px) {
+  #wrapper {
+    width: 960px;
+  }
+}
+@media (max-width: 1024px) {
+  #wrapper {
+    width: 580px;
+  }
+  #wrapper #header {
+    height: 200px
+  }
+  #wrapper #header .heading {
+    font-size: 3em;
+  }
+  #wrapper #content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  #wrapper #content #content-text {
+    width: 100%;
+  }
+  #wrapper #content #content-img {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  #wrapper #content #content-img img {
+    width: 31%;
+    margin: 5px;
+  }
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 280px;
+  background: url('./src/img/998F6C33599CDFCE33.png');
+  background-repeat: no-repeat;
+}
+#header .heading {
+  width: 315px;
+  height: 80px;
+  padding: 35px 0 0 20px;
+  color: #ff0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+  font-weight: 600; 
+}
+
+/* navigation */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  background-color: #060;
+  color: white;
+}
+#nav .button {
+  width: 100px;
+  text-align: center;
+}
+
+/* content */
+#content {
+  display: flex;
+  flex-direction: row;
+}
+/* content-text */
+#content #content-text {
+  width: 70%;
+}
+#content #content-text .content-heading {
+  margin: 20px 10px 20px 10px;
+  font-size: 21px;
+  font-weight: 600;
+}
+#content #content-text .content-subheading {
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+#content #content-text .content-main {
+
+}
+#content #content-text .content-main p {
+  margin: 20px 10px;
+  font-size: 14px; 
+}
+/* content-img  */
+#content #content-img {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#content #content-img img {
+  width: 80%;
+  margin: 5px 40px 5px;
+  border: 1px solid transparent;
+}
+#content #content-img img:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 65px;
+  padding: 10px 0px;
+  background-color: black;
+  color: white;
+}
+#footer div {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+#footer .location {
+  padding: 10px 0;
+}
+#footer .copyright {
+
+}
+
+
